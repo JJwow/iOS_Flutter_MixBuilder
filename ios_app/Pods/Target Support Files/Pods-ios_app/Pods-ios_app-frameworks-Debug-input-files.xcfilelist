@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-ios_app/Pods-ios_app-frameworks.sh
+${PODS_ROOT}/../../flutter_lib/ios_frameworks/App.framework
+${PODS_ROOT}/../../flutter_lib/ios_frameworks/Flutter.framework
+${PODS_ROOT}/../../flutter_lib/ios_frameworks/shared_preferences.framework

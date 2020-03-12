@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kua-er-ico"/>
+                        <viewControllerLayoutGuide type="bottom" id="flk-Ls-ouZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App第一个页面初始文案" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-VZ-6cM">
+                                <rect key="frame" x="113.5" y="388" width="187" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPI-Rf-bJt">
+                                <rect key="frame" x="107" y="508.5" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Nnc-6T-JcQ"/>
+                                </constraints>
+                                <state key="normal" title="打开第一个原生页面">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressedBtnOpen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lO6-ZS-fYX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是App第一个页面" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8IO-Nq-Vbz">
+                                <rect key="frame" x="20" y="94" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KzV-VZ-6cM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7dY-lJ-NaC"/>
+                            <constraint firstItem="8IO-Nq-Vbz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="BMd-iI-sTG"/>
+                            <constraint firstItem="JPI-Rf-bJt" firstAttribute="centerX" secondItem="KzV-VZ-6cM" secondAttribute="centerX" id="NRV-uX-EKB"/>
+                            <constraint firstItem="JPI-Rf-bJt" firstAttribute="top" secondItem="KzV-VZ-6cM" secondAttribute="bottom" constant="100" id="XTh-ix-tOX"/>
+                            <constraint firstAttribute="trailing" secondItem="8IO-Nq-Vbz" secondAttribute="trailing" id="bfE-p4-O7z"/>
+                            <constraint firstItem="KzV-VZ-6cM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ddA-FX-0xP"/>
+                            <constraint firstItem="KzV-VZ-6cM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="htj-vO-oxb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KzV-VZ-6cM" secondAttribute="trailing" id="lIy-0o-5Uk"/>
+                            <constraint firstItem="8IO-Nq-Vbz" firstAttribute="top" secondItem="kua-er-ico" secondAttribute="bottom" constant="50" id="qlH-bA-tGe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnOpen" destination="JPI-Rf-bJt" id="mwn-Bk-esc"/>
+                        <outlet property="lblTitle" destination="KzV-VZ-6cM" id="Apa-Yv-nsW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+</document>
